@@ -28,7 +28,6 @@ public class App {
 
     }
 
-        // Testa le 3 implementazioni del metodo getRandomInteger
     public static void testRandomInteger() {
         System.out.println("Test getRandomInteger:");
         System.out.println(DataHelper.getRandomInteger(5));
@@ -36,7 +35,6 @@ public class App {
         System.out.println(DataHelper.getRandomInteger(5, 10, 20));
     }
 
-    // Testa le 3 implementazioni del metodo getRandomUniqueInteger
     public static void testRandomUniqueInteger() {
         System.out.println("Test getRandomUniqueInteger:");
         System.out.println(DataHelper.getRandomUniqueInteger(5));
@@ -44,7 +42,6 @@ public class App {
         System.out.println(DataHelper.getRandomUniqueInteger(5, 10, 20));
     }
 
-    // Testa il metodo getFrequencyMap
     public static void testFrequencyMap() {
         System.out.println("Test getFrequencyMap:");
         List<Integer> randomNumbers = DataHelper.getRandomInteger(100, 0, 10);
