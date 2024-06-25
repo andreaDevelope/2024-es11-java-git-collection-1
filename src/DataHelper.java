@@ -10,6 +10,7 @@ public class DataHelper {
 
     // TODO: completare i metodi seguenti
 
+    // restituisce una lista di numeri interi casuali compresi tra 0 e 10
     public static List<Integer> getRandomInteger(int size) {
         List<Integer> listNumRnd = new ArrayList<>();
         Random rnd = new Random();
@@ -17,9 +18,10 @@ public class DataHelper {
             int rnd1 = rnd.nextInt(11); 
             listNumRnd.add(rnd1);
         }
-        return listNumRnd; // Restituisce la lista
+        return listNumRnd;
     }
 
+    // restituisce una lista di numeri interi casuali compresi tra 0 e max
     public static List<Integer> getRandomInteger(int size, int max) {
         List<Integer> listNumRnd2 = new ArrayList<>();
         Random rnd2 = new Random();
@@ -30,6 +32,7 @@ public class DataHelper {
         return listNumRnd2;
     }
 
+    // restituisce una lista di numeri interi casuali compresi tra min e max
     public static List<Integer> getRandomInteger(int size, int min, int max) {
         List<Integer> listNumMinMax = new ArrayList<>();
         Random rnd3 = new Random();
@@ -41,6 +44,7 @@ public class DataHelper {
         
     }
 
+    // restituisce una lista di numeri casuali NON DUPLICATI compresi tra 0 e 10
     public static Set<Integer> getRandomUniqueInteger(int size) {
         Set<Integer> setNumRnd = new HashSet<>();
         Random rnd4 = new Random();
@@ -52,6 +56,7 @@ public class DataHelper {
     
     }
 
+    // restituisce una lista di numeri casuali NON DUPLICATI compresi tra 0 e max
     public static Set<Integer> getRandomUniqueInteger(int size, int max) {
         Set<Integer> setNumRndMax = new HashSet<>();
         Random rnd5 = new Random();
@@ -62,6 +67,8 @@ public class DataHelper {
         return setNumRndMax;
     }
 
+    // // restituisce una lista di numeri casuali NON DUPLICATI compresi tra min e
+    // max
     public static Set<Integer> getRandomUniqueInteger(int size, int min, int max) {
         Set<Integer> setNumRndMinMax = new HashSet<>();
         Random rnd6 = new Random();
@@ -73,6 +80,7 @@ public class DataHelper {
         return setNumRndMinMax;
     }
 
+    // restituisce una mappa di frequenza di numeri interi
     public static Map<Integer, Integer> getFrequencyMap(List<Integer> getRandomUniqueInteger) {
         Map<Integer, Integer> mapNumRnd = new HashMap<>();
         for(int i = 0; i < getRandomUniqueInteger.size(); i++){
